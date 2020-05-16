@@ -1,3 +1,4 @@
+binding.pry
 class Backer
   attr_accessor :backers
   attr_reader :backed_projects, :name
