@@ -1,6 +1,6 @@
 binding.pry
 class Backer
-  attr_accessor :backers
+  attr_accessor :project
   attr_reader :backed_projects, :name
 
   def initialize(name)
@@ -12,7 +12,7 @@ class Backer
   def back_project(proj)
     binding.pry
     @backed_projects << proj
-    Project.backers << Project.add_backer(proj)
+    project.backers << Project.add_backer(proj)
 end
 
 end
